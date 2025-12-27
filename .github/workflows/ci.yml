@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   policy:
-    uses: hzr3d/arres_devops/.github/workflows/policy-ci.yml@feat/add-multi-repo-support
+    uses: hzr3d/arres_devops/.github/workflows/policy-ci.yml@main
     with:
       project_type: python_service
       docker_image_name: mock_api
