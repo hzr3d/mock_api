@@ -1,9 +1,6 @@
 # mock_api
 
-## Direct push without GitHub branch protection
-## Try Direct push with GitHub branch protection
-## Try again Direct push with GitHub branch protection
-
+## Clean up with a dev branch before merging
 
 A minimal FastAPI microservice used by `mock_frontend`.
 
