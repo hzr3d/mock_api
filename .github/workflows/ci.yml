@@ -5,6 +5,10 @@ on:
   push:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   policy:
     uses: hzr3d/arres_devops/.github/workflows/policy-ci.yml@feat/add-multi-repo-support
