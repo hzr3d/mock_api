@@ -5,11 +5,17 @@ on:
   push:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   policy:
-    uses: arres_devops/.github/workflows/policy-ci.yml@main
+    uses: hzr3d/arres_devops/.github/workflows/policy-ci.yml@main
     with:
       project_type: python_service
       docker_image_name: mock_api
       artifact_name: mock_api
       run_integration: true
+      with_mock_lib: true
+    secrets: inherit
