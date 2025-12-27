@@ -10,6 +10,7 @@ jobs:
     uses: hzr3d/arres_devops/.github/workflows/policy-ci.yml@feat/add-multi-repo-support
     with:
       project_type: python_service
+    secrets: inherit
       docker_image_name: mock_api
       artifact_name: mock_api
       run_integration: true
